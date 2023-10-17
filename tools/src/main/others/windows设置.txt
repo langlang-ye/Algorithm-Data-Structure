@@ -1,0 +1,33 @@
+关闭输入法 简体/繁体的切换的热键:  设置--> 按键   找到后关闭
+
+
+netstat -ano
+查看当前本机所有端口的情况
+
+netstat -aon|findstr "8080"
+  TCP    0.0.0.0:8787           0.0.0.0:0              LISTENING       7064
+
+查看指定端口的占用情况
+
+根据上一步查找到的pid 找到对应的进程
+tasklist|findstr "7064"
+javaw.exe                     7064 Console                    1    515,684 K
+
+taskkill /pid 7064   /F
+
+打开任务管理 找到这个进程 杀死即可
+
+---------------------------------------------------------------
+语法
+taskkill [/f] [/fi "条件"] [/t] [/pid PID] [/im IMAGENAME]
+
+/f：强制杀死进程，即使进程正在运行中。
+/fi "条件"：指定要杀死的进程的条件。条件可以是进程名称、进程 ID、进程句柄等。
+/t：杀死进程的子进程。
+/pid PID：指定要杀死的进程的 ID。
+/im IMAGENAME：指定要杀死的进程的名称。
+
+杀死指定进程名
+taskkill /f /fi "imagename eq java.exe"
+
+taskkill /im copyq.exe /f

@@ -1,0 +1,51 @@
+idea 创建项目初始化设置
+创建 project 项目
+ 
+
+打开Settings -> Editor -> Inspections -> Spring -> Spring Core -> Code，
+找到Autowiring for bean class，将代码审查级别从Error修改为Warning
+编辑区竖线问题: appearance show hard warp and ....
+查看maven的设置  maven 仓库的位置
+修改字符编码   File Encodings
+Java  compiler  编译版本 jdk 8  或其他更高
+ Editor  || General ||   code completion   设置代码智能提示
+
+File types 过滤                --可选
+代码编辑区 颜色设置				--可选
+
+位置: Editor  || Color scheme || General || text || Default text 
+
+ 
+ESL: 色调: 85 饱和度: 123 亮度:205  
+RGB: 红: 199 绿237 蓝204
+
+HEX:  C7EDCC
+
+
+idea  打开 eclipse 项目    idea 特有的 .idea 文件夹 自动生成 target 
+两个选项 
+一个是 eclipse  一个是 maven 
+两个都可以
+打开后 需要设置: 
+
+查看maven的设置  maven 仓库的位置
+
+如果idea 编译代码的版本总是 选择1.5 不支持 @Override 
+在pom 中配置:
+	<properties>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+1. 设置项目 project settings 
+2. 设置 sdk & language level 
+modules: 设置 language level
+
+3. Java  compiler  编译版本 jdk 8  或其他更高
+
+修改字符编码   File Encodings
+其他内容参看新建项目
+
+
+

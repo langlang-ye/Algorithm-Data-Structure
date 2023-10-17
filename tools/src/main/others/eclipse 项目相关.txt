@@ -1,0 +1,40 @@
+eclipse
+新工作空间: 
+修改 maven 配置, 项目编码 utf-8
+修改字体大小 16  颜色设置 85 123 205  
+
+
+eclipse
+项目路径(XXXXX)\target\classes\META-INF\MANIFEST.MF (系统找不到指f定的路径。)
+这个问题并不影响项目的运行, 但是项目图标和pom 文件会有错误标识
+
+选中项目右键, 刷新Refresh(F5)即可
+
+
+创建maven　项目建议选择　oxygen　或者更新版本　而不是　mars 老版本
+
+ maven项目执行单元测试可以正常执行，但是执行maven命令test，则报一下异常：
+ mvn test  程序包org.junit不存在解决方案
+ maven项目，单元测试和运行使用不同的classpath，测试使用test-classpath，运行使用classpath；
+ 创建maven项目使用junit默认的版本为3.8.1，它使用的是编程的方式，即使maven dependencies目录引入了junit，但也无法使用，只能通过build path添加junit支持
+ 将junit的版本提高到4.x，配置代码如下：
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <!-- 默认的版本为3.8.1，修改为4.x,因为3.x使用的为编程的方式，4.x为注解的形式。 -->
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+ 补充：我上面贴出的异常目录位于。。。\src\test\java\。。。,不是。。。\src\main\java\。。。，处理方式如上，
+ 如果异常发生在main目录而不是test目录，同时junit版本是4.x，解决方案则将scope属性去掉：
+         <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <!-- 默认的版本为3.8.1，修改为4.x,因为3.x使用的为编程的方式，4.x为注解的形式。 -->
+            <version>4.11</version>
+            <!-- 去掉scope作用域，使用默认的compile，编译、测试、运行都有效的作用域 -->
+            <!--<scope>test</scope>-->
+        </dependency>
+
+

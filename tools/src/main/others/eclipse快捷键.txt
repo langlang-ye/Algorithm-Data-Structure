@@ -1,0 +1,47 @@
+alt+/ 代码助手完成一些代码的插入
+Ctrl+1 快速修复(最经典的快捷键,就不用多说了)
+Shift+Enter 在当前行的下一行插入空行(这时鼠标可以在当前行的任一位置,不一定是最后)
+Ctrl+Shift+Enter 在当前行插入空行(原理同上条)
+
+Ctrl+D: 删除当前行
+Ctrl+Alt+↓ 复制当前行到下一行(复制增加)  //冲突孜为:ctrl+↓
+Ctrl+Alt+↑ 复制当前行到上一行(复制增加) //冲突孜为:ctrl+↑
+Alt+↓ 当前行和下面一行交互位置(特别实用,可以省去先剪切,再粘贴了)
+Alt+↑ 当前行和上面一行交互位置(同上)
+
+Ctrl+H 搜索
+Ctrl+Shift+F 格式化当前代码
+ Ctrl+F  当前文件中查找并替换
+Ctrl+Shift+X 把当前选中的文本全部变味大写
+Ctrl+Shift+Y 把当前选中的文本全部变为小写
+Ctrl+/ 注释当前行或选中的行,再按则取消注释
+Ctrl+Shift+/ 注释选中的行
+Ctrl+Shift+\ 解注释
+
+
+1.返回上次编辑的位置：Ctrl + Q
+2.返回光标上次停留的位置：Alt + 左键
+
+Ctrl+O 显示当前类的outlook快捷视图
+Ctrl+K 参照选中的Word快速定位到下一个
+Ctrl+Shift+K  参照选中的Word快速定位到上一个
+Ctrl+L 定位到指定的行
+Ctrl+E 显示所有打开的文件的下拉列表
+Ctrl+M 最大化当前的Edit或View (再按则反之)
+
+Ctrl+向左键/向右键  水平快速移动光标
+Ctrl+Shift+O  导入所有需要的类
+Ctrl+Shift+T  根据类名查找类
+Ctrl+Shift+R  根据文件名查找文件(包括Java文件)
+Ctrl+H 打开搜索对话框(根据文件内容出现的关键字)
+
+Alt+Shift+S  显示常用封装,重写的菜单
+Alt+shift+R 修改变量名或方法名
+Alt+Shift+M 抽取方法
+
+Alt+Enter 显示当前选择资源(工程,or 文件 or文件)的属性
+Alt+← 前一个编辑的页面
+Alt+→ 下一个编辑的页面(当然是针对上面那条来说了)
+F3 打开定位到的类
+F2 显示当前定位的类型的文档
+F11 运行当前测试方法或main方法

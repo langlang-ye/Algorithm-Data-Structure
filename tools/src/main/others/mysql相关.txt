@@ -1,0 +1,19 @@
+mysql 链接报错:
+
+WARN: Establishing SSL connection without server's identity verification is not recommended.
+According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option
+isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'.
+You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+
+Url 链接后面追加参数 连接符号(? | & )  &useSSL=false
+
+
+主键设置自增长: 避免主键自增不连续
+ALTER TABLE [表名字] AUTO_INCREMENT = 3;
+
+设置的新值小于或等于数据库中自增主键最大值的话, 之后插入数据都会以已经存在的最大值+1 开始.
+设置的新值大于数据库中自增主键最大值, 之后插入数据才会使用新设置的值开始自增.
+
+
+
+

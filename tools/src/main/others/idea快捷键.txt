@@ -1,0 +1,127 @@
+/*
+<1>.最扭曲MyEclipse习惯的一些快捷键：
+Ctrl+N:不再是新建，而是查找一个类,IDEA中新建一个类是在左则目录结构中选择要存放新类的目录，然后按Alt+Insert
+Ctrl+D:不再是删除一行，而是复制上一行
+Alt+/:不再是提示，而是复制上一单词
+Ctrl+O:不再是打开一个文件，而是重写父类方法
+Ctrl+Y:不再是对应Ctrl+Z的恢复，而是删除上一行，IDEA中恢复是Ctrl+Shit+Z
+Alt+up:不再是向上移动一行，而是跳到上一个方法
+Alt+down:不再是向下移动一行，而是跳到下一个方法
+
+<2>.你会用的最多的快捷键
+Alt+F7：查找一个属性或方法被谁调用
+Shift+F6:重命名一个属性或方法
+Ctrl+Alt+space(空格)：输入提示
+Alt+Enter：引入类或提供给你选择的处理方法
+Ctrl+向上:不移动光标，往上滑屏
+Ctrl+向下:不移动光标，往下滑屏
+Ctrl+Shift+up:向上移动一行
+Ctrl+Shift+down:向下移动一行
+Ctrl+Shift+F：在选中的文件目录里搜索
+Ctrl + Alt + L ：格式化代码(自动调整代码格式) --> Ctrl +Shift+ Alt + L ：
+
+Alt+Delete：安全删除字段或方法
+
+--> 很方便: Ctrl+Alt+N:把一些方法或变量赋值放在这，可以去除一些多余的赋值过程，这在重构中会非常常用
+用法如下：
+
+public String doGetString(String name) {
+        return String.format("your name:%s" + name);
+}
+public void function() {
+        String zahngsan = doGetString("zhangsan");
+}
+选中或把光标放在doGetString中，然后按Ctrl+Alt+N
+ */
+
+/*
+Ctrl + W: 递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 （必备）
+---> Ctrl + Space: 基础代码补全，默认在 Windows 系统上被输入法占用，需要进行修改，建议修改为 Ctrl +
+Ctrl + Alt + O: 优化导入的类，可以对当前文件和整个包目录使用 （必备）
+
+Ctrl + Alt + 左方向键: 退回到上一个操作的地方 （必备）
+Ctrl + Alt + 右方向键: 前进到上一个操作的地方 （必备）
+Ctrl + Shift + F: 根据输入内容查找整个项目 或 指定目录内文件 （必备）
+Ctrl + Shift + R: 根据输入内容替换对应内容，范围为整个项目 或 指定目录内文件 （必备）
+Ctrl + Shift + J: 自动将下一行合并到当前行末尾 （必备）
+
+Ctrl + Shift + N: 通过文件名定位 / 打开文件 / 目录，打开目录需要在输入的内容后面多加一个正斜杠 （必备
+
+ */
+
+
+/*
+idea 重构的快捷键:
+重命名文件、方法、属性等（rename）：SHIFT+F6
+提取当前选择为变量（extract variable）：CTRL+ALT+V
+提取当前选择为属性（extract field）：CTRL+ALT+F
+提取当前选择为常量（extract constant）：CTRL+ALT+C
+提取当前选择为方法（extract method）：CTRL+ALT+M
+提取当前选择为方法参数（extract parameter）：CTRL+ALT+P
+重构类、方法（change signarture）：CTRL+F6
+提取代码块至if、try等结构中（surround with）：CTRL+ALT+T
+创建模块文件等（new）：CTRL+ALT+N
+创建测试用例（test）：CTRL+SHIFT+T
+重构菜单（refactor for this）：CTRL+T
+ */
+
+
+/*
+执行(run) ctrl + shift + F10
+提示补全:    alt+/  只能提示自定义的变量
+单行注释      ctrl + / 会根据当前不同文件类型使用不同的注释符号
+多行注释   ctrl + shift + /
+向下复制一行 (Duplicate Lines)   ctrl+d
+删除一行或选中行 (delete line) ctrl+y
+向下移动行(move statement down)    ctrl+shift+down
+向上移动行(move statement up)      ctrl+shift+up
+向下开始新的一行(start new line)            shift+enter 与 ctrl+shift+enter
+向上开始新的一行 (Start New Line before current)       ctrl+alt+enter
+如何查看源码 (class)             ctrl + 选中指定的结构 或 ctrl + shift + alt + n
+万能解错/生成返回值变量               alt + enter 类似于 eclipse 中的 ctrl+1
+退回到前一个编辑的页面 (back)          alt + left
+进入到下一个编辑的页面(针对于上条) (forward)       alt + right
+回到上一个编辑的位置     写代码 需要复制变量  copy 代码片段 很方便    ctrl + shift + Backspace
+查看继承关系(type hierarchy)          ctrl+H
+
+格式化代码(reformat code)   ctrl+alt+L(与qq 冲突)
+    格式化选中的代码: 先ctrl + A 全选 ctrl+shift+alt+L
+提示方法参数类型(Parameter Info)            ctrl+p
+复制代码                     ctrl + c
+撤销                      ctrl + z
+反撤销                      ctrl + y
+剪切                      ctrl + x
+粘贴                      ctrl + v
+保存                      ctrl + s
+全选                      ctrl + a
+选中数行，整体往后移动                tab
+选中数行，整体往前移动                shift + tab
+查看类的结构：类似于eclipse的outline        ctrl+F12
+重构：修改变量名与方法名(rename)            shift+F6
+大写转小写/小写转大写(toggle case)         ctrl+shift+u
+生成构造器/get/set/toString                 alt + insert
+
+查看文档说明(quick documentation)       ctrl + Q
+收起所有的方法(collapse all)     ctrl + shift + -
+打开所有方法(expand all)       ctrl + shift + +
+打开代码所在硬盘文件夹(show in explorer)  快捷键暂无: 选中文件右键...
+生成try-catch等(surround with)       Ctrl +alt +T
+局部变量抽取为成员变量(introduce field)         ctrl+alt+f
+查找       ctrl+f
+替换(当前) Ctrl+R
+
+查找(全局)          ctrl + shift + f
+查找文件               double Shift
+查看类的继承结构图(Show UML Diagram)        ctrl + alt + shift + u
+查看方法的多层重写结构(method hierarchy)        ctrl+shift+h
+添加到收藏(ADD to favorites)        alt+shift+f   比较好的代码可以收藏起来
+抽取方法(Extract Method)               ctrl+alt+m
+打开最近修改的文件(Recently Files)     ctrl+E
+关闭当前打开的代码栏(close)        ctrl + F4
+
+关闭打开的所有代码栏(close all)       无, 鼠标右键操作吧
+快速搜索类中的错误(next highlighted error) 优先定位错误的位置, 如果没有错误就定位到警告的地方      F2
+选择要粘贴的内容(Show in Explorer)    ctrl+shift+v
+查找方法在哪里被调用(Call Hierarchy)          ctrl+shift+h
+ */
+ 

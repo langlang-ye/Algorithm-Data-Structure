@@ -1,0 +1,14 @@
+mvn install:install-file  -Dfile=D:\mycodes\online-master\lib\aliyun-sdk-vod-upload-1.4.11.jar -DgroupId=com.aliyun  -DartifactId=aliyun-sdk-vod-upload  -Dpackaging=jar   -Dversion=1.4.11
+
+
+
+
+或者 添加在lib 目录
+<dependency>
+			<groupId>com.aliyun</groupId>
+			<artifactId>aliyun-sdk-vod-upload</artifactId>
+			<version>1.4.11</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/chinapaysecure1_5.jar</systemPath>
+</dependency>
+
