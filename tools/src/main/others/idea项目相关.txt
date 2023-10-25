@@ -2,24 +2,74 @@ idea 创建项目初始化设置
 创建 project 项目
  
 
-打开Settings -> Editor -> Inspections -> Spring -> Spring Core -> Code，
-找到Autowiring for bean class，将代码审查级别从Error修改为Warning
-编辑区竖线问题: appearance show hard warp and ....
-查看maven的设置  maven 仓库的位置
+编辑区竖线问题: Editor  -->General --> Appearance --> show hard warp and visual guides (configured in code style options)  .... 取消勾选
+或者保持勾选 Editor  -->Code Style --> General 找到  Hard Wrap at: 360 设置长度为 360 换行
+查看 maven 的设置  maven 仓库的位置
 修改字符编码   File Encodings
 Java  compiler  编译版本 jdk 8  或其他更高
  Editor  || General ||   code completion   设置代码智能提示
+
+ Editor -->General  --> Editor Tabs -->  Closing Policy  默认10 改为 99  设置同时打开99个文件....
+ 导入设置:
+ Add unambiguous imports on the fly：快速添加明确的导入。
+ Optimize imports on the fly：快速优化导入，优化的意思即自动帮助删除无用的导入。 公司开发不要开启, 以免修改文件后提交代码
+ 与格式化代码再提交类似, 另外注释掉代码后遗留下导入的类.
+
+idea 导入多个同包的类合并为 *  设置到 9999 永不合并为 *
+Editor --> Code Style --> Java 切换到 imports
+5-->9999
+3-->9999
+
+Notifications:
+关闭本地化推荐  Localized IntelliJ IDEAXXX ...
+Recommended language plugin available 
+show in tool window   取消勾选
+
+
+Microsoft Defender configuration 
+popup type: No popup
+ show in tool window   取消勾选
+
 
 File types 过滤                --可选
 代码编辑区 颜色设置				--可选
 
 位置: Editor  || Color scheme || General || text || Default text 
 
- 
 ESL: 色调: 85 饱和度: 123 亮度:205  
 RGB: 红: 199 绿237 蓝204
-
 HEX:  C7EDCC
+
+设置字体大小 
+Editor -->font 18.0
+
+
++++++++++++++++++++++++++++++   Settings for new projects... ++++++++++++++++++++++++++++++++++++++
+hard wrap:  360 换行
+
+Java 导入多个同包的类合并为* 设置为 9999
+
+File encoding 设置了
+
+git 地址没设置
+
+设置了 maven
+Other Settings -->  auto import --> 勾选了 Add unambiguous imports on the fly：快速添加明确的导入。
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++  升级idea 或者更换电脑重新安装了  ++++++++++++++++++++++++++++++++++++++
+
+可以选择 Manage IDE Settings   Export settings 安装软件后再导入 import Settings 
+
+也可以使用idea setting sync... 设置开启同步 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
 
 
 idea  打开 eclipse 项目    idea 特有的 .idea 文件夹 自动生成 target 

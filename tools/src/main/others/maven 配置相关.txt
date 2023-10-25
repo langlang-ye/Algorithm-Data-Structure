@@ -1,0 +1,27 @@
+maven 安装第三方jar:
+
+mvn install:install-file  -Dfile=D:\mycodes\online-master\lib\aliyun-sdk-vod-upload-1.4.11.jar -DgroupId=com.aliyun  -DartifactId=aliyun-sdk-vod-upload  -Dpackaging=jar   -Dversion=1.4.11
+
+或者 添加在lib 目录
+<dependency>
+			<groupId>com.aliyun</groupId>
+			<artifactId>aliyun-sdk-vod-upload</artifactId>
+			<version>1.4.11</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/chinapaysecure1_5.jar</systemPath>
+</dependency>
+
+
+配置 aliyun
+    <mirror>
+      <id>alimaven</id>
+      <name>aliyun maven</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+
+在 maven settings.xml 配置好 <localRepository> 中的仓库地址后, 可以把 settings.xml 复制粘贴 放在C盘用户目录中的.m 里面
+这样即使使用默认配置, jar 包也会下载到指定的localRepository.
+
+
+
