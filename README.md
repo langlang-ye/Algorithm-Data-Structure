@@ -1,4 +1,4 @@
-# Algorithm-Data-Structure
+# algorithm-data-structure
 ---
 
 ### 该项目是数据结构与算法相关的, 默认使用jdk8, 除非有特别说明. 将包含一些学校学过的代码、leetcode 题解、算法4、剑指offer 等内容.

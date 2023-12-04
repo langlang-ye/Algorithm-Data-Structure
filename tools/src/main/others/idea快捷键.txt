@@ -36,10 +36,10 @@ public void function() {
 
 /*
 Ctrl + W: 递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 （必备）
----> Ctrl + Space: 基础代码补全，默认在 Windows 系统上被输入法占用，需要进行修改，建议修改为 Ctrl +
+Ctrl + Space: 基础代码补全，默认在 Windows 系统上被输入法占用，Windows10 11 已经修复了这个问题
 Ctrl + Alt + O: 优化导入的类，可以对当前文件和整个包目录使用 （必备）
 
-Ctrl + Alt + 左方向键: 退回到上一个操作的地方 （必备）
+Ctrl + Alt + 左方向键: 退回到上一个操作的地方| 回到上一个光标的地方 查看源码比较有用（必备）
 Ctrl + Alt + 右方向键: 前进到上一个操作的地方 （必备）
 Ctrl + Shift + F: 根据输入内容查找整个项目 或 指定目录内文件 （必备）
 Ctrl + Shift + R: 根据输入内容替换对应内容，范围为整个项目 或 指定目录内文件 （必备）
@@ -77,9 +77,10 @@ idea 重构的快捷键:
 向上移动行(move statement up)      ctrl+shift+up
 向下开始新的一行(start new line)            shift+enter 与 ctrl+shift+enter
 向上开始新的一行 (Start New Line before current)       ctrl+alt+enter
+分割一行为多行  Ctrl+Enter   如果在第一个字符钱, 等同于  ctrl+alt+enter
 如何查看源码 (class)             ctrl + 选中指定的结构 或 ctrl + shift + alt + n
 万能解错/生成返回值变量               alt + enter 类似于 eclipse 中的 ctrl+1
-退回到前一个编辑的页面 (back)          alt + left
+退回到前一个编辑的页面 (back)    在已经打开的多个页面的切换      alt + left
 进入到下一个编辑的页面(针对于上条) (forward)       alt + right
 回到上一个编辑的位置     写代码 需要复制变量  copy 代码片段 很方便    ctrl + shift + Backspace
 查看继承关系(type hierarchy)          ctrl+H

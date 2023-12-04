@@ -1,6 +1,11 @@
 package com.langlang.utils;
 
-import java.awt.*;
+import java.awt.Toolkit;
+import java.awt.Dimension;
+import java.awt.GraphicsDevice;
+import java.awt.DisplayMode;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsEnvironment;
 import java.awt.geom.AffineTransform;
 
 /*	获取屏幕使用的分辨率
