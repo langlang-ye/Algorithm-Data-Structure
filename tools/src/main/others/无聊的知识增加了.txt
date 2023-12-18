@@ -1,1 +1,14 @@
 强迫证： window 任务栏固定图标， 点击启动出现两个应用程序的解决方法： 先运行程序， 程序打开后， 再固定到任务栏即可， eclipse 可用
+
+固定任务栏的程序图标变白?
+刷新缓存
+打开命令行:
+taskkill /im explorer.exe /f
+
+cd /d %userprofile%\appdata\local
+
+del iconcache.db /a
+
+start explorer.exe
+
+exit
