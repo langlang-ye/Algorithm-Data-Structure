@@ -1,7 +1,5 @@
 package num300;
 
-import test.ListNode;
-
 import java.util.Stack;
 
 /**
