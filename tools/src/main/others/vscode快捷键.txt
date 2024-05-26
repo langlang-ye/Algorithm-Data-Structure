@@ -1,176 +1,151 @@
-vscode常用快捷键 
-一、vs code 的常用快捷键列表
-
-1、注释：
-
-　　a) 单行注释：[ctrl+k,ctrl+c] 或 ctrl+/
-
-　　b) 取消单行注释：[ctrl+k,ctrl+u] (按下ctrl不放，再按k + u)
-
-　　c) 多行注释：[alt+shift+A]
-
-　　d) 多行注释：/**
-
-2、移动行：alt+up/down
-
-3、显示/隐藏左侧目录栏 ctrl + b
-
-4、复制当前行：shift + alt +up/down
-
-5、删除当前行：shift + ctrl + k
-
-6、控制台终端显示与隐藏：ctrl + ~
-
-7、查找文件/安装vs code 插件地址：ctrl + p
-
-8、代码格式化：shift + alt +f
-
-9、新建一个窗口: ctrl + shift + n
-
-10、行增加缩进: ctrl + [
-
-11、行减少缩进: ctrl + ]
-
-12、裁剪尾随空格(去掉一行的末尾那些没用的空格) : ctrl + shift + x
-
-13、字体放大/缩小: ctrl + ( + 或 - )
-
-14、拆分编辑器 :ctrl + 1/2/3
-
-15、切换窗口:  ctrl + shift + left/right
-
-16、关闭编辑器窗口:  ctrl + w
-
-17、关闭所有窗口 : ctrl + k + w
-
-18、切换全屏 :F11
-
-19、自动换行:  alt + z
-
-20、显示git:   ctrl + shift + g
-
-21、全局查找文件：ctrl + p
-
-22、显示相关插件的命令(如：git log)：ctrl + shift + p
-
-23、选中文字：shift + left / right / up / down
-
-24、折叠代码： ctrl + k + 0-9 (0是完全折叠)
-
-25、展开代码： ctrl + k + j (完全展开代码)
-
-26、删除行 ： ctrl + shift + k
-
-27、快速切换主题：ctrl + k / ctrl + t
-
-28、快速回到顶部 ： ctrl + home
-
-29、快速回到底部 : ctrl + end
-
-30、格式化选定代码 ：ctrl + k / ctrl +f
-
-31、选中代码 ： shift + 鼠标左键
-
-32、多行同时添加内容（光标） ：ctrl + alt + up/down
-
-33、全局替换：ctrl + shift + h
-
-34、当前文件替换：ctrl + h
-
-35、打开最近打开的文件：ctrl + r
-
-36、打开新的命令窗：ctrl + shift + c
-
- 
-
-二、vs code 的常用插件
-
-1、Auto Rename Tag 修改html标签，自动帮你完成尾部闭合标签的同步修改，和webstorm一样。
-
-2、Auto Close Tag 自动闭合HTML标签
-
-4、Beautiful 格式化代码的工具
-
-5、Dash Dash是MacOS的API文档浏览器和代码段管理器
-
-6、Ejs Snippets ejs 代码提示
-
-7、ESLint 检查javascript语法错误与提示
-
-8、File Navigator 快速查找文件
-
-9、Git History(git log)查看git log
-
-10、Gulp Snippets 写gulp时用到，gulp语法提示。
-
-11、HTML CSS Support  在HTML标签上写class智能提示当前项目所支持的样式
-
-12、HTML Snippets 超级好用且初级的H5代码片段以及提示
-
-13、Debug for Chrome让vs code映射chrome的debug功能，静态页面都可以用vscode来打断点调试、配饰稍微复杂一点
-
-14、Document this Js的注释模板
-
-15、jQuery Code Snippets jquery提示工具
-
-16、Html2jade html模板转pug模板
-
-17、JS-CSS-HTML Formatter 格式化
-
-18、Npm intellisense require 时的包提示工具
-
-19、Open in browser 打开默认浏览器
-
-20、One Dark Theme 一个vs code的主题
-
-21、Path Intellisense 自动路径补全、默认不带这个功能
-
-22、Project Manager多个项目之间快速切换的工具
-
-23、Pug(Jade) snippets pug语法提示
-
-24、React Components 根据文件名创建反应组件代码。
-
-25、React Native Tools reactNative工具类为React Native项目提供了开发环境。
-
-26、Stylelintcss/sass代码审查
-
-27、Typings auto installer 安装vscode 的代码提示依赖库，基于typtings的
-
-28、View In Browser 默认浏览器查看HTML文件（快捷键Ctrl+F1可以修改）
-
-29、Vscode-icons 让vscode资源目录加上图标、必备
-
-30、VueHelper Vue2代码段（包括Vue2 api、vue-router2、vuex2）
-
-31、Vue 2 Snippets vue必备vue代码提示
-
-32、Vue-color vue语法高亮主题
-
-33、Auto-Open Markdown Preview markdown文件自动开启预览
-
-34、EverMonkey 印象笔记
-
-35、atom one dark atom的一个高亮主题(个人推荐)
-
- 
-
-三、常用的电脑快捷键
-
-1、ctrl + shift + delete 快速清除浏览器缓存
-
-2、ctrl + alt + delete 快速进入任务管理器页面
-
-3、window + L  快速锁定电脑
-
-4、window + d  所有窗口最小化
-
-5、 window + e  打开我的资源管理器(我的电脑)
-
-6、 window + f  快速打开搜索窗口
-
-7、 alt + tab快速查看打开的应用与窗口
-
-借鉴别人的博客的啦。。。。。。
-
- 
+通用快捷键
+快捷键	作用
+Ctrl+Shift+P,F1	展示全局命令面板
+Ctrl+P	快速打开最近打开的文件
+Ctrl+Shift+N	打开新的编辑器窗口
+Ctrl+Shift+W	关闭编辑器
+
+基础编辑
+快捷键	作用
+Ctrl + X	剪切
+Ctrl + C	复制
+Alt + up/down	移动行上下
+Shift + Alt up/down	在当前行上下复制当前行
+Ctrl + Shift + K	删除行
+Ctrl + Enter	在当前行下插入新的一行
+Ctrl + Shift + Enter	在当前行上插入新的一行
+Ctrl + Shift + \	匹配花括号的闭合处，跳转
+Ctrl + ] / [	行缩进
+Home	光标跳转到行头
+End	光标跳转到行尾
+Ctrl + Home	跳转到页头
+Ctrl + End	跳转到页尾
+Ctrl + up/down	行视图上下偏移
+Alt + PgUp/PgDown	屏视图上下偏移
+Ctrl + Shift + [	折叠区域代码
+Ctrl + Shift + ]	展开区域代码
+Ctrl + K Ctrl + [	折叠所有子区域代码
+Ctrl + k Ctrl + ]	展开所有折叠的子区域代码
+Ctrl + K Ctrl + 0	折叠所有区域代码
+Ctrl + K Ctrl + J	展开所有折叠区域代码
+Ctrl + K Ctrl + C	添加行注释
+Ctrl + K Ctrl + U	删除行注释
+Ctrl + /	添加关闭行注释
+Shift + Alt +A	块区域注释
+Alt + Z	添加关闭词汇包含
+
+导航
+快捷键	作用
+Ctrl + T	列出所有符号
+Ctrl + G	跳转行
+Ctrl + P	跳转文件
+Ctrl + Shift + O	跳转到符号处
+Ctrl + Shift + M	打开问题展示面板
+F8	跳转到下一个错误或者警告
+Shift + F8	跳转到上一个错误或者警告
+Ctrl + Shift + Tab	切换到最近打开的文件
+Alt + left / right	向后、向前
+Ctrl + M	进入用Tab来移动焦点
+
+查询与替换
+快捷键	作用
+Ctrl + F	查询
+Ctrl + H	替换
+F3 / Shift + F3	查询下一个/上一个
+Alt + Enter	选中所有出现在查询中的
+Ctrl + D	匹配当前选中的词汇或者行，再次选中-可操作
+Ctrl + K Ctrl + D	移动当前选择到下个匹配选择的位置(光标选定)
+Alt + C / R / W	不分大小写/使用正则/全字匹配
+
+#多行光标操作于选择
+
+快捷键	作用
+Alt + Click	插入光标-支持多个
+Ctrl + Alt + up/down	上下插入光标-支持多个
+Ctrl + U	撤销最后一次光标操作
+Shift + Alt + I	插入光标到选中范围内所有行结束符
+Ctrl + I	选中当前行
+Ctrl + Shift + L	选择所有出现在当前选中的行-操作
+Ctrl + F2	选择所有出现在当前选中的词汇-操作
+Shift + Alt + right	从光标处扩展选中全行
+Shift + Alt + left	收缩选择区域
+Shift + Alt + (drag mouse)	鼠标拖动区域，同时在多个行结束符插入光标
+Ctrl + Shift + Alt + (Arrow Key)	也是插入多行光标的[方向键控制]
+Ctrl + Shift + Alt + PgUp/PgDown	也是插入多行光标的[整屏生效]
+
+丰富的语言操作
+快捷键	作用
+Ctrl + Space	输入建议[智能提示]
+Ctrl + Shift + Space	参数提示
+Tab	Emmet指令触发/缩进
+Shift + Alt + F	格式化代码
+Ctrl + K Ctrl + F	格式化选中部分的代码
+F12	跳转到定义处
+Alt + F12	代码片段显示定义
+Ctrl + K F12	在其他窗口打开定义处
+Ctrl + .	快速修复部分可以修复的语法错误
+Shift + F12	显示所有引用
+F2	重命名符号
+Ctrl + Shift + . / ,	替换下个值
+Ctrl + K Ctrl + X	移除空白字符
+Ctrl + K M	更改页面文档格式
+
+编辑器管理
+快捷键	作用
+Ctrl + F4, Ctrl + W	关闭编辑器
+Ctrl + k F	关闭当前打开的文件夹
+Ctrl + \	切割编辑窗口
+Ctrl + 1/2/3	切换焦点在不同的切割窗口
+Ctrl + K Ctrl <-/->	切换焦点在不同的切割窗口
+Ctrl + Shift + PgUp/PgDown	切换标签页的位置
+Ctrl + K <-/->	切割窗口位置调换
+
+文件管理
+快捷键	作用
+Ctrl + N	新建文件
+Ctrl + O	打开文件
+Ctrl + S	保存文件
+Ctrl + Shift + S	另存为
+Ctrl + K S	保存所有当前已经打开的文件
+Ctrl + F4	关闭当前编辑窗口
+Ctrl + K Ctrl + W	关闭所有编辑窗口
+Ctrl + Shift + T	撤销最近关闭的一个文件编辑窗口
+Ctrl + K Enter	保持开启
+Ctrl + Shift + Tab	调出最近打开的文件列表，重复按会切换
+Ctrl + Tab	与上面一致，顺序不一致
+Ctrl + K P	复制当前打开文件的存放路径
+Ctrl + K R	打开当前编辑文件存放位置【文件管理器】
+Ctrl + K O	在新的编辑器中打开当前编辑的文件
+
+显示
+快捷键	作用
+F11	切换全屏模式
+Shift + Alt + 1	切换编辑布局【目前无效】
+Ctrl + =/-	放大 / 缩小
+Ctrl + B	侧边栏显示隐藏
+Ctrl + Shift + E	资源视图和编辑视图的焦点切换
+Ctrl + Shift + F	打开全局搜索
+Ctrl + Shift + G	打开Git可视管理
+Ctrl + Shift + D	打开DeBug面板
+Ctrl + Shift + X	打开插件市场面板
+Ctrl + Shift + H	在当前文件替换查询替换
+Ctrl + Shift + J	开启详细查询
+Ctrl + Shift + V	预览Markdown文件【编译后】
+Ctrl + K v	在边栏打开渲染后的视图【新建】
+
+调试
+快捷键	作用
+F9	添加解除断点
+F5	启动调试、继续
+F11 / Shift + F11	单步进入 / 单步跳出
+F10	单步跳过
+Ctrl + K Ctrl + I	显示悬浮
+
+集成终端
+快捷键	作用
+Ctrl + `	打开集成终端
+Ctrl + Shift + `	创建一个新的终端
+Ctrl + Shift + C	复制所选
+Ctrl + Shift + V	复制到当前激活的终端
+Shift + PgUp / PgDown	页面上下翻屏
+Ctrl + Home / End	滚动到页面头部或尾部

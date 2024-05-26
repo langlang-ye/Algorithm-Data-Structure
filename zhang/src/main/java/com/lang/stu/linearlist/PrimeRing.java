@@ -32,11 +32,11 @@ public class PrimeRing {
 		System.out.println("素数环: " + ring.toString());
 	}
 	
-	// 判断k是否为素数
+	// 判断k是否为素数 质数
 	public boolean isPrime(int k){
 		if( k == 2) 
 			return true;
-		if( k < 2 || k > 2 && k % 2 == 0) 
+		if( k < 2 || k > 2 && k % 2 == 0) // k > 2 判断条件可以去掉
 			return false;
 		
 		// Math.sqrt(k)返回k的平方根值
